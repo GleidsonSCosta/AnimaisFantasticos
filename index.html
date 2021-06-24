@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- link da fonte usada no menu  -->
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<!-- link da fonte usada no título -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Animais Fantasticos</title>
+    <title>Animais Fantásticos</title>
 </head>
 <body>
     <!-- Criar o menu de navegação -->
@@ -18,9 +26,9 @@
     </nav>
     <!-- Sessão da página-->
     <section class="grid-section">
-        <h1>Animais Fantásticos</h1>
+        <h1 class="titulo">Animais Fantásticos</h1>
         <!--Adicionar uma lista com as imagens-->
-        <ul>
+        <ul class="animais-lista">
             <li><img src="img/imagem1.jpg" alt=""></li>
             <li><img src="img/imagem2.jpg" alt=""></li>
             <li><img src="img/imagem3.jpg" alt=""></li>
@@ -29,7 +37,7 @@
             <li><img src="img/imagem6.jpg" alt=""></li>
         </ul>
         <!-- Criar uma div para isolar a descrição dos animais -->
-        <div>
+        <div class="animais">
             <!-- Cada descrição dos animais ficará dentro de uma section -->
             <section>
                 <h2>Raposa</h2>
@@ -120,10 +128,10 @@
         </div>
     </section>
     <!-- Criar uma nova sessão para a segunda paarte da página -->
-    <section class="grid-section faq">
-        <h1>FAQ </h1>
+    <section class="grid-section faq" id="faq">
+        <h1 class="titulo">FAQ </h1>
         <!-- criar um lista de definições -->
-        <dl>
+        <dl class="faq-lista">
             <dt>Qual a idade dos animais?</dt>
             <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
             <dt>Eles são fantásticos?</dt>
@@ -135,12 +143,12 @@
         </dl>
     </section>
     <section class="grid-section contato">
-        <h1>Contato</h1>
-        <div>
+        <h1 class="titulo">Contato</h1>
+        <div class="mapa">
             <img src="img/mapa.png" alt="">
         </div>
-        <div>
-            <ul class="dados">
+        <div class="dados">
+            <ul>
                 <li>contato@contato.com</li>
                 <li>+ 55 11 99999-9999</li>
                 <li>Rua Infinita, 1000</li>
